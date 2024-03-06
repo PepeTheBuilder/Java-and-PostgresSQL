@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.jetbrains</groupId>
+    <artifactId>annotations</artifactId>
+    <version>24.1.0</version>
+    <name>JetBrains Java Annotations</name>
+    <description>A set of annotations used for code inspection support and code documentation.</description>
+    <url>https://github.com/JetBrains/java-annotations</url>
+    <scm>
+        <url>https://github.com/JetBrains/java-annotations</url>
+        <connection>scm:git:git://github.com/JetBrains/java-annotations.git</connection>
+        <developerConnection>scm:git:ssh://github.com:JetBrains/java-annotations.git</developerConnection>
+    </scm>
+    <properties>
+        <maven.compiler.source>20</maven.compiler.source>
+        <maven.compiler.target>20</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations-java5</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>JetBrains</id>
+            <name>JetBrains Team</name>
+            <organization>JetBrains</organization>
+            <organizationUrl>https://www.jetbrains.com</organizationUrl>
+        </developer>
+    </developers>
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
